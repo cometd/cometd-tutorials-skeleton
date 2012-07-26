@@ -6,7 +6,7 @@
 
     <servlet>
         <servlet-name>cometd</servlet-name>
-        <servlet-class>org.cometd.java.annotation.AnnotationCometdServlet</servlet-class>
+        <servlet-class>org.cometd.annotation.AnnotationCometdServlet</servlet-class>
         <init-param>
             <param-name>transports</param-name>
             <param-value>org.cometd.websocket.server.WebSocketTransport</param-value>
