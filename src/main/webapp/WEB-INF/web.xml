@@ -11,6 +11,10 @@
             <param-name>transports</param-name>
             <param-value>org.cometd.websocket.server.WebSocketTransport</param-value>
         </init-param>
+        <init-param>
+            <param-name>logLevel</param-name>
+            <param-value>3</param-value>
+        </init-param>
     </servlet>
     <servlet-mapping>
         <servlet-name>cometd</servlet-name>
