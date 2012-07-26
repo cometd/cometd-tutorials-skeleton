@@ -10,7 +10,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.cometd.tutorials</groupId>
-    <artifactId>tutorials-skeleton</artifactId>
+    <artifactId>cometd-tutorials-skeleton</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
