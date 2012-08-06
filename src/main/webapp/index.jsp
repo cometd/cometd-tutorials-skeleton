@@ -19,7 +19,7 @@
 
     <h2>CometD Tutorial</h2>
 
-    <div id="body"></div>
+    <div id="status"></div>
 
 </body>
 </html>
