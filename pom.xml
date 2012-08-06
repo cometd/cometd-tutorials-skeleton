@@ -52,7 +52,7 @@
                 <configuration>
                     <scanIntervalSeconds>10</scanIntervalSeconds>
                     <webAppConfig>
-                        <contextPath>/tutorials-skeleton</contextPath>
+                        <contextPath>/</contextPath>
                     </webAppConfig>
                 </configuration>
             </plugin>
