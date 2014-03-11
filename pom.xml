@@ -9,7 +9,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.cometd.tutorials</groupId>
     <artifactId>cometd-tutorials-skeleton</artifactId>
-    <version>2.8.0-SNAPSHOT</version>
+    <version>2.8.0</version>
     <packaging>war</packaging>
 
     <properties>
@@ -27,7 +27,7 @@
         <connection>scm:git:git://github.com/cometd/cometd-tutorials-skeleton.git</connection>
         <developerConnection>scm:git:ssh://git@github.com/cometd/cometd-tutorials-skeleton.git</developerConnection>
         <url>https://github.com/cometd/cometd-tutorials-skeleton</url>
-        <tag>HEAD</tag>
+        <tag>2.8.0</tag>
     </scm>
 
     <build>
