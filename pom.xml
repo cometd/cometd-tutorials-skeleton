@@ -3,13 +3,13 @@
     <parent>
         <groupId>org.cometd</groupId>
         <artifactId>cometd-project</artifactId>
-        <version>2.9.1</version>
+        <version>3.0.9</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.cometd.tutorials</groupId>
     <artifactId>cometd-tutorials-skeleton</artifactId>
-    <version>2.9.2-SNAPSHOT</version>
+    <version>3.0.9-SNAPSHOT</version>
     <packaging>war</packaging>
 
     <properties>
@@ -34,25 +34,13 @@
         <defaultGoal>install</defaultGoal>
         <plugins>
             <plugin>
-                <artifactId>maven-war-plugin</artifactId>
-                <configuration>
-                    <overlays>
-                        <overlay />
-                        <overlay>
-                            <groupId>org.cometd.javascript</groupId>
-                            <artifactId>cometd-javascript-dojo</artifactId>
-                        </overlay>
-                    </overlays>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>org.mortbay.jetty</groupId>
+                <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
                 <configuration>
                     <scanIntervalSeconds>10</scanIntervalSeconds>
-                    <webAppConfig>
+                    <webApp>
                         <contextPath>/</contextPath>
-                    </webAppConfig>
+                    </webApp>
                 </configuration>
             </plugin>
         </plugins>
@@ -61,23 +49,7 @@
     <dependencies>
         <dependency>
             <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.cometd.java</groupId>
-            <artifactId>bayeux-api</artifactId>
-            <version>${cometd-version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.cometd.javascript</groupId>
-            <artifactId>cometd-javascript-dojo</artifactId>
-            <version>${cometd-version}</version>
-            <type>war</type>
-        </dependency>
-        <dependency>
-            <groupId>org.cometd.java</groupId>
-            <artifactId>cometd-java-server</artifactId>
-            <version>${cometd-version}</version>
+            <artifactId>javax.servlet-api</artifactId>
         </dependency>
         <dependency>
             <groupId>org.cometd.java</groupId>
@@ -86,45 +58,13 @@
         </dependency>
         <dependency>
             <groupId>org.cometd.java</groupId>
-            <artifactId>cometd-websocket-jetty</artifactId>
+            <artifactId>cometd-java-websocket-javax-server</artifactId>
             <version>${cometd-version}</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.cometd.java</groupId>
-                    <artifactId>cometd-java-client</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-util</artifactId>
-            <version>${jetty-version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-jmx</artifactId>
-            <version>${jetty-version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-continuation</artifactId>
-            <version>${jetty-version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.eclipse.jetty</groupId>
-            <artifactId>jetty-websocket</artifactId>
-            <version>${jetty-version}</version>
         </dependency>
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-servlets</artifactId>
             <version>${jetty-version}</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.eclipse.jetty</groupId>
-                    <artifactId>jetty-client</artifactId>
-                </exclusion>
-            </exclusions>
         </dependency>
         <dependency>
             <groupId>org.slf4j</groupId>
